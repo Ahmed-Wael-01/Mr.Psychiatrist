@@ -15,7 +15,6 @@ nav{
 	top: 0;
 	z-index: 3;
 	width: 100vw;
-	height: 0px;
 	overflow: hidden;
 	transition: 0.5s;
 }
@@ -25,9 +24,11 @@ ul{
 	flex-direction: column;
 	gap: 15px;
 	width: 100vw;
+	max-height: 0px;
 	background-color: #00131C;
 	color: #75A4C5;
-	padding: 40px;
+	padding: 0px;
+	transition: max-height 0.5s, padding 0.5s;
 }
 
 li{
@@ -50,8 +51,9 @@ label{
 	display: none;
 }
 
-nav:has(#button:checked){
-	height: 150px;
+#button:checked ~ ul{
+	max-height: 500px;
+	padding: 40px;
 }
 
 .head-quote{
