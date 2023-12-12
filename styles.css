@@ -31,14 +31,18 @@ ul{
 	gap: 15px;
 	max-height: 0px;
 	background-color: #00131C;
-	color: #75A4C5;
+	color: #CADBE7;
 	padding-left: 40px;
 	padding-right: 40px;
 	transition: max-height 0.5s, padding 0.5s;
 }
 
 li{
+	padding: 5px;
 	list-style: none;
+}
+li:hover{
+	background-color: #004347;
 }
 
 label{
@@ -53,6 +57,7 @@ label{
 	right: 0;
 	z-index: 4;
 	color: white;
+	transition: 0.5s;
 }
 
 #button{
@@ -63,6 +68,10 @@ label{
 	max-height: 500px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+
+#button:checked ~ label{
+	transform: rotate(-90deg);
 }
 
 .head-quote{
@@ -78,7 +87,7 @@ label{
 
 .quote-text{
 	color: rgb(228, 229, 235);
-	font-size: 60px;
+	font-size: 57px;
 	font-weight: 900;
 	text-shadow: 1.5px 1.5px black ;
 }
@@ -89,5 +98,14 @@ label{
 		background-position: right;
 	}
 
+	ul{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	#button:checked ~ ul{
+		padding-top: 25px;
+                padding-bottom: 25px;
+	}
 }
 
