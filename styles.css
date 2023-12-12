@@ -8,6 +8,13 @@ body{
 	background-color: black;
 	height: 100vh;
 	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.linker{
+	font-size: 20px;
+	color: #CADBE7;
+	width: 50vw;
 }
 
 nav{
@@ -16,18 +23,17 @@ nav{
 	z-index: 3;
 	width: 100vw;
 	overflow: hidden;
-	transition: 0.5s;
 }
 
 ul{
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	width: 100vw;
 	max-height: 0px;
 	background-color: #00131C;
 	color: #75A4C5;
-	padding: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
 	transition: max-height 0.5s, padding 0.5s;
 }
 
@@ -37,10 +43,12 @@ li{
 
 label{
 	margin: 10px;
-	padding: 20px;
 	width: 50px;
 	height: 50px;
-	/*background-color: black;*/
+	border-top: #507FA9 solid 25px;
+	border-right: #507FA9 solid 25px;
+	border-bottom: #507FA9 solid 25px;
+	border-left: transparent solid 25px;
 	position: fixed;
 	right: 0;
 	z-index: 4;
@@ -53,7 +61,8 @@ label{
 
 #button:checked ~ ul{
 	max-height: 500px;
-	padding: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .head-quote{
@@ -73,3 +82,12 @@ label{
 	font-weight: 900;
 	text-shadow: 1.5px 1.5px black ;
 }
+
+@media (min-width: 480px){
+
+	body{
+		background-position: right;
+	}
+
+}
+
