@@ -3,12 +3,17 @@
 	margin: 0;
 }
 
-body{
+.main-body{
 	background-image: url("images/main-photo.jpg");
 	background-color: black;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-position: left;
+}
+
+.cat-body{
+	background-color: #002C31;
+	border: solid #00131C 8px;
 }
 
 .linker{
@@ -43,6 +48,11 @@ li{
 }
 li:hover{
 	background-color: #004347;
+}
+
+a, a:link, a:visited{
+	color: #CADBE7;
+	text-decoration: none;
 }
 
 label{
@@ -92,9 +102,53 @@ label{
 	text-shadow: 1.5px 1.5px black ;
 }
 
+.cat-parent{
+	min-height: calc(100vh - 16px);
+        width: 80vw;
+        margin: auto;
+        background-color: #00131C;
+}
+
+.about{
+	color: white;
+	padding: 40px;
+}
+
+.cat-h{
+	margin: 0;
+}
+
+.card-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card{
+	position: relative;
+	height: 280px;
+	width: 280px;
+	background-image: url("images/main-photo.jpg");
+	background-size: cover;
+	margin: 10px;
+}
+
+.card::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	height: 250px;
+	width: 250px;
+	border: white solid 2px;
+
+}
+
 @media (min-width: 480px){
 
-	body{
+	.main-body{
 		background-position: right;
 	}
 
