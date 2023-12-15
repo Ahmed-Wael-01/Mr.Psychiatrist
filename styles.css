@@ -12,6 +12,7 @@
 }
 
 .cat-body{
+	background-image: url("images/crack.jpeg");
 	background-color: #002C31;
 	border: solid #00131C 8px;
 }
@@ -25,7 +26,7 @@
 nav{
 	position: fixed;
 	top: 0;
-	z-index: 3;
+	z-index: 9;
 	width: 100vw;
 	overflow: hidden;
 }
@@ -65,7 +66,7 @@ label{
 	border-left: transparent solid 25px;
 	position: fixed;
 	right: 0;
-	z-index: 4;
+	z-index: 10;
 	color: white;
 	transition: 0.5s;
 }
@@ -102,6 +103,10 @@ label{
 	text-shadow: 1.5px 1.5px black ;
 }
 
+.cat-container{
+	background-color: rgba(0, 44, 49, 0.4);
+}
+
 .cat-parent{
 	min-height: calc(100vh - 16px);
         width: 80vw;
@@ -122,13 +127,39 @@ label{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	gap: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+#first{
+	background-image: url("images/test6.jpg");
+}
+
+#second{
+	background-image: url("images/test5.jpeg");
+}
+
+#third{
+	background-image: url(images/test4.jpeg);
+}
+
+#fourth{
+	background-image: url(images/test3.jpg);
+}
+
+#fifth{
+	background-image: url("images/test2.jpg");
+}
+
+#sixth{
+	background-image: url("images/test1.jpeg");
 }
 
 .card{
 	position: relative;
-	height: 280px;
-	width: 280px;
-	background-image: url("images/main-photo.jpg");
+	height: 260px;
+	width: 260px;
 	background-size: cover;
 	margin: 10px;
 }
@@ -140,10 +171,21 @@ label{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	height: 250px;
-	width: 250px;
-	border: white solid 2px;
+	height: 230px;
+	width: 230px;
+	border: #CADBE7 solid 2px;
 
+}
+
+.card::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 6px;
+	left: 6px;
+	height: 260px;
+	width: 260px;
+	background-color: #002C31;
 }
 
 @media (min-width: 480px){
