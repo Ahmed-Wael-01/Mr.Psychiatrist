@@ -156,12 +156,28 @@ label{
 	background-image: url("images/test1.jpeg");
 }
 
+#seventh{
+	background-image: url("images/test7.jpg");
+}
+
 .card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: relative;
 	height: 260px;
 	width: 260px;
+	color: rgb(228, 229, 235);
+	font-size: 26px;
+	font-weight: 900;
+	text-shadow: 1.5px 1.5px black;
 	background-size: cover;
 	margin: 10px;
+	padding: 30px;
+}
+
+.card-num{
+	text-align: right;
 }
 
 .card::after{
