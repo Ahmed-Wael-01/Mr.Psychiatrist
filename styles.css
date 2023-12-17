@@ -17,6 +17,12 @@
 	border: solid #00131C 8px;
 }
 
+.table-body{
+	background-color: #00131C;
+	color: white;
+	padding: 20px;
+}
+
 .linker{
 	font-size: 20px;
 	color: #CADBE7;
@@ -56,7 +62,7 @@ a, a:link, a:visited{
 	text-decoration: none;
 }
 
-label{
+.list-icon{
 	margin: 10px;
 	width: 50px;
 	height: 50px;
@@ -98,7 +104,7 @@ label{
 
 .quote-text{
 	color: rgb(228, 229, 235);
-	font-size: 57px;
+	font-size: 52px;
 	font-weight: 900;
 	text-shadow: 1.5px 1.5px black ;
 }
@@ -204,6 +210,10 @@ label{
 	background-color: #002C31;
 }
 
+.table-section{
+	overflow-x: auto;
+}
+
 @media (min-width: 480px){
 
 	.main-body{
@@ -218,6 +228,11 @@ label{
 	#button:checked ~ ul{
 		padding-top: 25px;
                 padding-bottom: 25px;
+	}
+
+	.quote-text{
+		font-size: 60px;
+		margin-top: 10px;
 	}
 }
 
