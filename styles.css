@@ -146,27 +146,32 @@ a, a:link, a:visited{
 }
 
 #second{
-	background-image: url("images/test5.jpeg");
+	background-image: url("images/test7.jpg");
 }
 
 #third{
-	background-image: url(images/test4.jpeg);
+	background-image: url(images/third.jpg);
+	background-position: center;
 }
 
 #fourth{
-	background-image: url(images/test3.jpg);
+	background-image: url(images/fourth.jpg);
 }
 
 #fifth{
-	background-image: url("images/test2.jpg");
+	background-image: url("images/fifth.png");
 }
 
 #sixth{
-	background-image: url("images/test1.jpeg");
+	background-image: url("images/sixth.jpg");
 }
 
 #seventh{
-	background-image: url("images/test7.jpg");
+	background-image: url("images/seventh.jpg");
+}
+
+#eighth{
+	background-image: url("images/eight.png");
 }
 
 .card{
@@ -241,12 +246,15 @@ a, a:link, a:visited{
 }
 
 .form-container{
+	margin: auto;
+	max-width: 500px;
 	border: 1px solid #00131C;
-	padding: 12px 10px;
+	padding: 12px 20px;
 	background-color: #004347;
 }
 
 .form-header{
+	text-align: center;
 	border-bottom: 1px solid #00131C;
 	margin-bottom: 10px;
 	padding: 10px 0px;
