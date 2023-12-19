@@ -18,9 +18,11 @@
 }
 
 .table-body{
-	background-color: #00131C;
+	background-color: #002C31;
 	color: white;
 	padding: 20px;
+	border: solid #00131C 8px;
+	min-height: 100vh;
 }
 
 .linker{
@@ -32,6 +34,7 @@
 nav{
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 9;
 	width: 100vw;
 	overflow: hidden;
@@ -210,8 +213,51 @@ a, a:link, a:visited{
 	background-color: #002C31;
 }
 
+.table-para, .table-section, .form-container{
+	margin: 20px 0px;
+}
+
 .table-section{
 	overflow-x: auto;
+}
+
+.data-table{
+	border: 1px solid #00131C;
+	border-collapse: collapse;
+	min-width: 100%;
+}
+
+.data-table th, .data-table td{
+	text-align: left;
+	padding: 12px 10px;
+}
+
+.data-table th{
+	background-color: #00131C;
+}
+
+.data-table tr:nth-child(even){
+	background-color: #004347;
+}
+
+.form-container{
+	border: 1px solid #00131C;
+	padding: 12px 10px;
+	background-color: #004347;
+}
+
+.form-header{
+	border-bottom: 1px solid #00131C;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+}
+
+.form-header h2{
+	margin: 0px 0px 10px 0px;;
+}
+
+form input, form select{
+	margin: 10px 0px;
 }
 
 @media (min-width: 480px){
