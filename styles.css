@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
 	margin: 0;
+	font-family: 'Philosopher', sans-serif;
 }
 
 .main-body{
@@ -171,7 +172,7 @@ a, a:link, a:visited{
 }
 
 #eighth{
-	background-image: url("images/eight.png");
+	background-image: url("images/photo10.jpg");
 }
 
 .card{
